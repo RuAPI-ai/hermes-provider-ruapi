@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68,<84"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hermes-provider-ruapi"
+version = "0.1.0"
+description = "RuAPI model-provider plugin for Hermes Agent"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "RuAPI" }]
+keywords = ["hermes-agent", "hermes-plugin", "model-provider", "ruapi", "claude"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+# Standard library only.
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/RuAPI-ai/hermes-provider-ruapi"
+Issues = "https://github.com/RuAPI-ai/hermes-provider-ruapi/issues"
+
+# Optional pip distribution: Hermes imports a bare-module entry point for its
+# module-level register_provider() call, once the user lists it in
+# plugins.enabled.
+[project.entry-points."hermes_agent.plugins"]
+ruapi = "ruapi"
+
+[tool.setuptools]
+packages = ["ruapi"]
+
+[tool.setuptools.package-data]
+ruapi = ["plugin.yaml", "after-install.md", "README.md"]

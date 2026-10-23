@@ -1,0 +1,13 @@
+name: ruapi
+kind: model-provider
+version: 0.1.0
+description: RuAPI providers for Hermes. Claude models over RuAPI's native Anthropic Messages API (ruapi), GPT, Gemini, DeepSeek, GLM, Qwen, Kimi and other chat models over its OpenAI-compatible API (ruapi-openai); one API key for both.
+author: RuAPI
+license: MIT
+homepage: https://www.ruapi.ai/?utm_source=hermes&utm_medium=plugin
+requires_hermes: ">=0.21.5"
+requires_env:
+  - name: RUAPI_API_KEY
+    description: "RuAPI API key"
+    url: "https://docs.ruapi.ai/en/integrations/hermes"
+    secret: true
