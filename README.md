@@ -55,8 +55,9 @@ VPN, баланс пополняется в USDT, карта иностранн�
 - A RuAPI API key in `RUAPI_API_KEY`. Create an account at
   [ruapi.ai](https://www.ruapi.ai/register?utm_source=hermes&utm_medium=plugin), then
   create a key in the console (API Keys). A new account usually gets a small trial
-  balance for `deepseek-flash`; Claude, GPT, Gemini and the other models unlock after
-  the first top-up of $5 or more. Prices per model:
+  balance for `deepseek-flash`, `claude-haiku-5-5` and `gpt-6-luna`; the other models
+  (Claude Sonnet and Opus, other GPT models, Gemini and the rest) unlock after the
+  first top-up of $5 or more. Prices per model:
   [ruapi.ai/pricing](https://www.ruapi.ai/pricing?utm_source=hermes&utm_medium=plugin).
 - The plugin itself has no Python dependencies beyond the standard library.
 
